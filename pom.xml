@@ -26,13 +26,13 @@
 
     <issueManagement>
         <system>github</system>
-        <!--<url>http://github.com/abelaska/jedis-lock/issues</url>-->
+        <url>https://github.com/Leon-cs/coffeeCodes/issues</url>
     </issueManagement>
 
     <scm>
-        <!--<url>http://github.com/abelaska/jedis-lock</url>
-        <connection>scm:git:git@github.com:abelaska/jedis-lock.git</connection>
-        <developerConnection>scm:git:git@github.com:abelaska/jedis-lock.git</developerConnection>-->
+        <url>https://github.com/Leon-cs/coffeeCodes/coffeeCodes</url>
+        <connection>scm:git:git@github.com:Leon-cs/coffeeCodes.git</connection>
+        <developerConnection>scm:git:git@github.com:Leon-cs/coffeeCodes.git</developerConnection>
     </scm>
 
     <developers>
@@ -89,6 +89,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
     </dependencies>
 
