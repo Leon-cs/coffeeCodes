@@ -154,11 +154,7 @@ public class JedisLock {
     }
 
     /**
-     * Renew lock.
-     * 
-     * @return true if lock is acquired, false otherwise
-     * @throws InterruptedException
-     *             in case of thread interruption
+     * 更新锁
      */
     public boolean renew() throws InterruptedException {
         final Lock lock = Lock.fromString(jedis.get(lockKeyPath));
@@ -183,16 +179,14 @@ public class JedisLock {
     }
 
     /**
-     * Check if owns the lock
-     * @return  true if lock owned
+     * 检查锁
      */
     public synchronized boolean isLocked() {
         return this.lock != null;
     }
     
     /**
-     * Returns the expiry time of this lock
-     * @return  the expiry time in millis (or null if not locked)
+     * 获取锁的过期时间
      */
     public synchronized long getLockExpiryTimeInMillis() {
         return this.lock.getExpiryTime();
