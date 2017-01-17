@@ -16,7 +16,7 @@ import java.util.concurrent.*;
  * <p/>
  * <b>Create on:</b>2015年8月21日 15:04:22 <br/>
  *
- * @author: 袁其亮
+ * @author: ChangSheng
  */
 @Slf4j
 public class ThreadPoolUtil {

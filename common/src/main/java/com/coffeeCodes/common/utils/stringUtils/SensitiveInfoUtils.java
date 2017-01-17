@@ -1,4 +1,4 @@
-package com.coffeeCodes.common.utils.certificate;
+package com.coffeeCodes.common.utils.stringUtils;
 
 
 import org.apache.commons.lang3.StringUtils;

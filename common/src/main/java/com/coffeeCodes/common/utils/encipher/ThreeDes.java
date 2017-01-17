@@ -18,7 +18,7 @@ import java.security.Key;
  */
 @Slf4j
 public class ThreeDes {
-    private static final String XINBANG = "COFFEECODES";
+    private static final String COFFEE_CODES = "COFFEECODES";
 
     private static Base64 base64 = new Base64();
     private static byte[] myIV = {50, 51, 52, 53, 54, 55, 56, 57};
@@ -138,7 +138,7 @@ public class ThreeDes {
      **/
     public static String encrypt(String con){
         try {
-            return desEncrypt(con, XINBANG);
+            return desEncrypt(con, COFFEE_CODES);
         }catch (Exception e){
             return con;
         }
@@ -156,7 +156,7 @@ public class ThreeDes {
      **/
     public static String decrypt(String con) {
         try {
-            return desDecrypt(con, XINBANG);
+            return desDecrypt(con, COFFEE_CODES);
         } catch (Exception e) {
             return con;
         }
