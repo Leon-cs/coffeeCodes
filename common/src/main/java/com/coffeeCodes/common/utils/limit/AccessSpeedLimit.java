@@ -31,7 +31,7 @@ public class AccessSpeedLimit {
      * @param key
      * @param seconds
      * @param limitCount
-     * @return
+     * @return boolean
      */
     public boolean tryAccess(String key,int seconds,int limitCount){
         LimitRule limitRule=new LimitRule();
