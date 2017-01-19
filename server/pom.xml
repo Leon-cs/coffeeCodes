@@ -12,6 +12,11 @@
     <artifactId>server</artifactId>
 
     <dependencies>
+        <!-- 内部 -->
+        <dependency>
+            <groupId>com.coffeeCodes.core</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
         <!-- 启动用 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -20,6 +25,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
         <!-- 测试用 -->
         <dependency>
